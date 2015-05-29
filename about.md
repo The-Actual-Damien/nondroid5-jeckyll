@@ -6,6 +6,21 @@ permalink: /about/
 
 Some information about you!
 
+JAVA
+C
+C#
+Python
+PHP
+Javascript
+Node.js
+MySQL
+Redis
+MongoDB
+PostgreSQL
+GUI(Qt,Tkinter,Swing)
+kalilinux
+Realforce
+
 ### More Information
 
 http://muziqlabe.appspot.com
