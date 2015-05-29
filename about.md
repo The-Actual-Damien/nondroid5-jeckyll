@@ -10,6 +10,8 @@ School: Hosei University
 
 Name: Fumihiko Akagi
 
+Age: 24
+
 ### Programming
 
 JAVA
