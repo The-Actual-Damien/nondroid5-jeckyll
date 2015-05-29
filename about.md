@@ -6,7 +6,7 @@ permalink: /about/
 
 ### Introduction
 
-Name: Fumihiko Akagi（赤木文彦）
+Name: Fumihiko Akagi
 
 Handle: anondroid5
 
