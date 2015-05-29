@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /about
 ---
 
 Some information about you!
@@ -9,6 +9,8 @@ Some information about you!
 Hosei University
 
 Fumihiko Akagi
+
+### Programming
 
 JAVA
 
