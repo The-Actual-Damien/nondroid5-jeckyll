@@ -6,11 +6,15 @@ permalink: /about/
 
 ### Introduction
 
-School: Hosei University
+Name: Fumihiko Akagi(赤木文彦)
 
-Name: Fumihiko Akagi
+Handle: anondroid5
+
+Sex: Male
 
 Age: 24
+
+School: Hosei University
 
 ### Programming
 
