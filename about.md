@@ -6,7 +6,7 @@ permalink: /about/
 
 ### Introduction
 
-School: Hosei University
+School: Graduate School of Engineering, Hosei University
 
 Name: Fumihiko Akagi
 
