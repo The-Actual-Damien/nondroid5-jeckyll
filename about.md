@@ -8,7 +8,7 @@ permalink: /about/
 
 Hosei University
 
-Fumihiko Akagi
+Name: Fumihiko Akagi
 
 ### Programming
 
