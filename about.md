@@ -38,7 +38,7 @@ PostgreSQL
 
 GUI(Qt,Tkinter,Swing)
 
-kalilinux
+Kalilinux
 
 Realforce
 
