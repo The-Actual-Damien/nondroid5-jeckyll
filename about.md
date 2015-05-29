@@ -44,7 +44,7 @@ Realforce
 
 ### More Information
 
-http://muziqlabe.appspot.com
+[μsiQ](http://muziqlabe.appspot.com)
 
 ### Contact me
 
