@@ -6,6 +6,8 @@ permalink: /about/
 
 Some information about you!
 
+Hosei University
+
 JAVA
 
 C
