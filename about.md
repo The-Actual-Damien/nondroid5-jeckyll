@@ -20,10 +20,6 @@ School: Hosei University
 
 JAVA
 
-C
-
-C#
-
 Python
 
 PHP
@@ -31,6 +27,10 @@ PHP
 Javascript
 
 Node.js
+
+C
+
+C#
 
 MySQL
 
