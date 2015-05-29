@@ -8,6 +8,8 @@ Some information about you!
 
 Hosei University
 
+Fumihiko Akagi
+
 JAVA
 
 C
