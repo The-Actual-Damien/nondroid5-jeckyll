@@ -6,7 +6,7 @@ permalink: /about/
 
 ### Introduction
 
-Hosei University
+School: Hosei University
 
 Name: Fumihiko Akagi
 
