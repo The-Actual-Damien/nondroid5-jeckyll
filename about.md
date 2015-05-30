@@ -64,6 +64,6 @@ Realforce
 
 [μsiQ](http://muziqlabe.appspot.com)
 
-### Contact me
+### 連絡先
 
 [anondroid5@gmail.com](mailto:anondroid5@gmail.com)
