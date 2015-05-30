@@ -36,7 +36,7 @@ C 1年
 
 C# 1年
 
-### Databases
+### データベース
 
 MySQL
 
@@ -56,7 +56,7 @@ CentOS
 
 Kalilinux
 
-### Keyboad
+### キーボード
 
 Realforce
 
