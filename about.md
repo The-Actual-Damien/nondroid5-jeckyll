@@ -4,7 +4,7 @@ title: About Me
 permalink: /about/
 ---
 
-### Profile
+### プロフィール
 
 <img src="{{ site.baseurl }}/images/profile.png" width="200"=></img>
 
@@ -20,7 +20,7 @@ School: Hosei University
 
 Study: Real-Time Summerizing based on burst detection and authentic reporters
 
-### Programming
+### プログラミング歴
 
 Java 4
 
