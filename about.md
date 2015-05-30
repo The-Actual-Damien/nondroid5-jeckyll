@@ -22,19 +22,19 @@ Study: Real-Time Summerizing based on burst detection and authentic reporters
 
 ### プログラミング歴
 
-Java 4
+Java 4年
 
-Python 2
+Python 2年
 
-PHP 2
+PHP 2年
 
-Javascript 2
+Javascript 2年
 
-Node.js 2
+Node.js 2年
 
-C 1
+C 1年
 
-C# 1
+C# 1年
 
 ### Databases
 
