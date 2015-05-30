@@ -32,6 +32,10 @@ C
 
 C#
 
+GUI(Qt,Tkinter,Swing)
+
+### Databases
+
 MySQL
 
 Redis
@@ -40,13 +44,19 @@ MongoDB
 
 PostgreSQL
 
-GUI(Qt,Tkinter,Swing)
+### OS
+
+Windows
+
+Mac OS X
 
 Kalilinux
 
+### Keyboad
+
 Realforce
 
-### More Information
+### Web Site
 
 [μsiQ](http://muziqlabe.appspot.com)
 
