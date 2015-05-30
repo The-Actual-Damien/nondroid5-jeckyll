@@ -53,8 +53,7 @@ baseurl: ""
 # !! You don't need to change any of the configuration flags below !!
 #
 
-# markdown: redcarpet
-markdown: kramdown
+markdown: redcarpet
 highlighter: pygments
 permalink: /:title/
 
@@ -76,3 +75,5 @@ exclude:
     - LICENSE
     - README.md
     - CNAME
+
+markdown: kramdown
