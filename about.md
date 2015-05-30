@@ -8,17 +8,17 @@ permalink: /about/
 
 <img src="{{ site.baseurl }}/images/profile.png" width="200"=></img>
 
-Name: Fumihiko Akagi
+氏名: 赤木文彦
 
-Handle: anondroid5
+ハンドルネーム: anondroid5
 
-Sex: Male
+性別: 男性
 
-Age: 24
+年齢: 24歳
 
-School: Hosei University
+大学: 法政大学大学院　理工学研究科　応用情報工学専攻
 
-Study: Real-Time Summerizing based on burst detection and authentic reporters
+研究テーマ: Real-Time Summerizing based on burst detection and authentic reporters
 
 ### プログラミング歴
 
