@@ -18,7 +18,7 @@ School: Hosei University
 
 ### Programming
 
-JAVA
+Java
 
 Python
 
