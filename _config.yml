@@ -55,7 +55,15 @@ baseurl: ""
 
 markdown: redcarpet
 redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+  extensions: [
+    "no_intra_emphasis",
+    "fenced_code_blocks",
+    "autolink",
+    "tables",
+    "footnotes",
+    "strikethrough",
+    "lax_html_blocks"
+  ]
 highlighter: pygments
 permalink: /:title/
 
