@@ -1,2 +1,2 @@
 # Jekyll Now
- v 
+ v 1.1.0
