@@ -1,10 +1,10 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
 
-### Introduction
+### Profile
 
 Name: Fumihiko Akagi
 
