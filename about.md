@@ -22,21 +22,19 @@ Study: Real-Time Summerizing based on burst detection and authentic reporters
 
 ### Programming
 
-Java
+Java 4
 
-Python
+Python 2
 
-PHP
+PHP 2
 
-Javascript
+Javascript 2
 
-Node.js
+Node.js 2
 
-C
+C 1
 
-C#
-
-GUI(Qt,Tkinter,Swing)
+C# 1
 
 ### Databases
 
