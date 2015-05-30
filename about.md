@@ -60,7 +60,7 @@ Kalilinux
 
 Realforce
 
-### Web Site
+### Webサイト
 
 [μsiQ](http://muziqlabe.appspot.com)
 
