@@ -6,7 +6,7 @@ permalink: /about/
 
 ### Profile
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+![_config.yml]({{ site.baseurl }}/images/profile.png)
 
 Name: Fumihiko Akagi
 
