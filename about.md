@@ -6,6 +6,8 @@ permalink: /about/
 
 ### Profile
 
+![_config.yml]({{ site.baseurl }}/images/config.png)
+
 Name: Fumihiko Akagi
 
 Handle: anondroid5
