@@ -46,9 +46,11 @@ PostgreSQL
 
 ### OS
 
-Windows
+Windows 7
 
 Mac OS X
+
+CentOS
 
 Kalilinux
 
