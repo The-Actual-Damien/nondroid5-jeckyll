@@ -51,7 +51,7 @@ $ brew install tree
 $ brew install wget
 ```
 
-現在のシェルを確認する
+現在のシェルを確認
 
 ```
 $ dscl localhost -read Local/Default/Users/$USER UserShell
@@ -74,7 +74,7 @@ $ cat /etc/shells
 /bin/zsh
 ```
 
-~/.zshrc を編集します
+~/.zshrc を編集
 
 ```
 $ vi ~/.zshrc
