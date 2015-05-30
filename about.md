@@ -18,7 +18,11 @@ permalink: /about/
 
 大学: 法政大学大学院　理工学研究科　応用情報工学専攻
 
-研究テーマ: Real-Time Summerizing based on burst detection and authentic reporters
+###　研究テーマ
+
+バースト検出と良い実況者に基づくリアルタイム状況要約手法
+
+Real-Time Summerizing based on burst detection and authentic reporters
 
 ### プログラミング歴
 
