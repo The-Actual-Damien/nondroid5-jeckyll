@@ -16,6 +16,8 @@ Age: 24
 
 School: Hosei University
 
+Study: Real-Time Summerizing based on burst detection and authentic reporters
+
 ### Programming
 
 Java
