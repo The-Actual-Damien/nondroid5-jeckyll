@@ -10,7 +10,7 @@ permalink: /about/
 
 氏名: 赤木文彦
 
-ハンドルネーム: anondroid5
+アカウント: anondroid5
 
 性別: 男性
 
