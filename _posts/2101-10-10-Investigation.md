@@ -13,7 +13,7 @@ title: 研究内容
 
 ###### バースト検出に関して
 
-本稿では、蝦名らの提案したAggregation Pyramidを利用する
+本稿では、Aggregation Pyramidを利用する
 
 ###### 要約生成
 
