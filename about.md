@@ -24,10 +24,6 @@ permalink: /about/
 
 Real-Time Summerizing based on burst detection and authentic reporters
 
-### 受賞歴
-
-残念ながらありません。大学院卒業までに、頑張りたいです。
-
 ### プログラミング歴
 
 Java 4年
