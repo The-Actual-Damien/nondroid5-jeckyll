@@ -6,8 +6,6 @@ permalink: /about/
 
 ### プロフィール
 
-<img src="{{ site.baseurl }}/images/profile.png" width="200"=></img>
-
 氏名: 赤木文彦
 
 アカウント: anondroid5
