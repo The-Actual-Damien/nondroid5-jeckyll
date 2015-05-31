@@ -1,14 +1,12 @@
 ---
 layout: page
-title: 自己紹介
+title: About Me
 permalink: /about/
 ---
 
-### プロフィール
+### anondroid5のプロフィール
 
-氏名: 赤木文彦
-
-アカウント: anondroid5
+本名: 赤木文彦
 
 性別: 男性
 
