@@ -4,6 +4,7 @@ title: 画像のアスペクト比を維持して拡縮
 ---
 
 jQueryの場合
+
 ```
 <script type="text/javascript" src="/path/to/jquery.js"></script>
 <script type="text/javascript">
@@ -29,6 +30,7 @@ jQueryの場合
 ```
 
 javascriptの場合
+
 ```
 <script>
 var maxWidth  = 300;
