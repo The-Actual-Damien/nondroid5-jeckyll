@@ -68,10 +68,10 @@ Realforce
 
 [μsiQ](http://muziqlabe.appspot.com)
 
-### 連絡先
-
 ### Link
 
 - [Amazon Wish List](http://www.amazon.co.jp/registry/wishlist/25WMELWTJKYWE) Amazonのほしい物リスト
+
+### 連絡先
 
 [anondroid5@gmail.com](mailto:anondroid5@gmail.com)
