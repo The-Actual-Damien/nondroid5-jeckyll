@@ -70,6 +70,8 @@ Realforce
 
 ### Link
 
+- [Twitter(@anondroid5)](https://twitter.com) IT関連のつぶやき多数のTwitter
+
 - [Amazon Wish List](http://www.amazon.co.jp/registry/wishlist/25WMELWTJKYWE) Amazonのほしい物リスト
 
 ### 連絡先
