@@ -10,3 +10,8 @@ title: 研究内容
 
  - バースト検出 (Burst Detection) 
  - 要約生成 (Summerizing)
+
+###### バースト検出に関して
+
+本稿では、蝦名らの提案したAggregation Pyramidを利用する
+
