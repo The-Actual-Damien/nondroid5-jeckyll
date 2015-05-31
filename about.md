@@ -4,8 +4,6 @@ title: About Me
 permalink: /about/
 ---
 
-### anondroid5のプロフィール
-
 本名: 赤木文彦
 
 性別: 男性
