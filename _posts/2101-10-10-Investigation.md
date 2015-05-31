@@ -21,5 +21,5 @@ title: 研究内容
 
 ###### 評価指標
 
-Linらの提案したROUGEをTwitter用に応用した修正版ROUGEのN=1を用いる
+Linらの提案したROUGEをTwitter用に応用した修正版ROUGEを用いる。その際N=1とする。
 
