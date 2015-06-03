@@ -68,7 +68,7 @@ Realforce
 
 - [Amazon Wish List](http://www.amazon.co.jp/registry/wishlist/25WMELWTJKYWE) Amazonのほしい物リスト
 
-- [ask.fm](http://ask.fm/anondroid5) 質問等はこちらに
+- [ask.fm](http://ask.fm/anondroid5) 質問等はこちらにお願いします
 
 ### 連絡先
 
