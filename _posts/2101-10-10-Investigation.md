@@ -24,7 +24,3 @@ title: 研究内容
 Linらの提案したROUGEをTwitter用に応用した修正版ROUGEを用いる。
 
 その際N=1として評価を行う。
-
-###### 進捗報告
-
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/x5DSLhCDuKK5KG" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/anondroid5/20150603-48911939" title="20150603 進捗報告" target="_blank">20150603 進捗報告</a> </strong></div>
