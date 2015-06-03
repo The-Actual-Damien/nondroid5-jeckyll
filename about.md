@@ -66,9 +66,9 @@ Realforce
 
 - [Twitter(@anondroid5)](https://twitter.com) IT関連のつぶやき
 
-- [ask.fm](http://ask.fm/anondroid5) 質問等はこちらに
-
 - [Amazon Wish List](http://www.amazon.co.jp/registry/wishlist/25WMELWTJKYWE) Amazonのほしい物リスト
+
+- [ask.fm](http://ask.fm/anondroid5) 質問等はこちらに
 
 ### 連絡先
 
