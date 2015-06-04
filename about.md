@@ -72,4 +72,4 @@ Realforce
 
 ### 連絡先
 
-[anondroid5@gmail.com](mailto:anondroid5@gmail.com)
+[syukatsu43@gmail.com](mailto:syukatsu43@gmail.com)
