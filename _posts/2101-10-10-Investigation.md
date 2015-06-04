@@ -19,7 +19,7 @@ title: 研究内容
 
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/duY0RiP7SIr5Y7" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/anondroid5/aggregation-pyramid" title="Aggregation pyramid" target="_blank">Aggregation pyramid</a> </strong></div>
 
-データの格納、計算を解析に対して利用する
+データの格納、計算を解析に対して適用することで高速にバーストを検出する
 
 ###### 要約生成
 
