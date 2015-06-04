@@ -30,3 +30,5 @@ title: 研究内容
 Linらの提案したROUGEをTwitter用に応用した修正版ROUGEを用いる
 
 その際N=1として評価を行う
+
+If I were reborn, I would like to wark at Google.
