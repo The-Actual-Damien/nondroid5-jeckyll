@@ -24,11 +24,11 @@ title: カナダ開催 FIFA 女子ワールドカップ 2015
 | No |放送局|   放送日   |放送時刻|           対戦           | Tag | Tag |   Tag   |  Tag  |
 |:--:|:----:|:----------:|:------:|:------------------------:|:---:|:---:|:-------:|:-----:|
 | 1  |NHKBS1| 6月7日(日) | AM7:00 |       カナダvs中国       |#CNA |#CHA |#worldcup|#wc2015|
-| 2  |NHKBS1| 6月7日(日) | AM10:00|ニュージーランドvsオランダ|#CNA |#CHA |#worldcup|#wc2015|
-| 14 |NHKBS1| 6月12日(日)| AM7:00 |      中国vsオランダ      |#CNA |#CHA |#worldcup|#wc2015|
-| 13 |NHKBS1| 6月12日(日)| AM10:00| カナダvsニュージーランド |#CNA |#CHA |#worldcup|#wc2015|
-| 26 |NHKBS1| 6月16日(日)| AM10:00|  中国vsニュージーランド  |#CNA |#CHA |#worldcup|#wc2015|
-| 25 |NHKBS1| 6月16日(日)| AM10:00|     オランダvsカナダ     |#CNA |#CHA |#worldcup|#wc2015|
+| 2  |未放送| 6月7日(日) | AM10:00|ニュージーランドvsオランダ|#CNA |#CHA |#worldcup|#wc2015|
+| 14 |NHKBS1| 6月12日(金)| AM7:00 |      中国vsオランダ      |#CNA |#CHA |#worldcup|#wc2015|
+| 13 |未放送| 6月12日(金)| AM10:00| カナダvsニュージーランド |#CNA |#CHA |#worldcup|#wc2015|
+| 26 |未放送| 6月16日(火)| AM8:30 |  中国vsニュージーランド  |#CNA |#CHA |#worldcup|#wc2015|
+| 25 |未放送| 6月16日(火)| AM8:30 |     オランダvsカナダ     |#CNA |#CHA |#worldcup|#wc2015|
 
 ### グループB
 - **結果**
