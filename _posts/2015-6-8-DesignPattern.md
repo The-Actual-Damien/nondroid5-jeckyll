@@ -3,7 +3,7 @@ layout: post
 title: デザインパターンに関して
 ---
 
-今更ながら、GoFに関して研究している。
+今更ながら、GoFに関して学習している。
 
 GoFとは、「The Gang Of Four」で4人の奴らという意味である。
 
