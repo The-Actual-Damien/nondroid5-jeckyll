@@ -18,11 +18,14 @@ permalink: /about/
 
 - Real-Time Summerizing based on burst detection and authentic reporters
 
-### 好きなアプリ
+### 好きなプログラム
 
 - クローラー
 
 - Twitter
+
+- GUI 
+
 
 ### プログラミング歴
 
