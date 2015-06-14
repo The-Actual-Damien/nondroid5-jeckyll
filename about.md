@@ -18,7 +18,7 @@ permalink: /about/
 
 Real-Time Summerizing based on burst detection and authentic reporters
 
-好きなアプリ
+### 好きなアプリ
 
 - クローラー
 
@@ -26,45 +26,45 @@ Real-Time Summerizing based on burst detection and authentic reporters
 
 ### プログラミング歴
 
-Java 4年
+- Java 4年
 
-Python 2年
+- Python 2年
 
-PHP 2年
+- PHP 2年
 
-Javascript 2年
+- Javascript 2年
 
-Node.js 2年
+- Node.js 2年
 
-C 1年
+- C 1年
 
-C# 1年
+- C# 1年
 
 ### データベース
 
-MySQL
+- MySQL
 
-Redis
+- Redis
 
-MongoDB
+- MongoDB
 
-PostgreSQL
+- PostgreSQL
 
 ### OS
 
-Windows 7
+- Windows 7
 
-Mac OS X
+- Mac OS X
 
-CentOS
+- CentOS
 
-Kalilinux
+- Kalilinux
 
-Ubuntu
+- Ubuntu
 
 ### キーボード
 
-Realforce
+- Realforce
 
 ### Webアプリ
 
