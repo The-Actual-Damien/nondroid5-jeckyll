@@ -68,7 +68,7 @@ Real-Time Summerizing based on burst detection and authentic reporters
 
 ### Webアプリ
 
-[μsiQ](http://muziqlabe.appspot.com)
+- [μsiQ](http://muziqlabe.appspot.com)
 
 ### Link
 
