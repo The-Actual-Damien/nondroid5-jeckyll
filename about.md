@@ -20,7 +20,7 @@ permalink: /about/
 
 ### 好きなプログラム
 
-- クローラー
+- Crawler
 
 - Twitter
 
