@@ -4,19 +4,19 @@ title: About Me
 permalink: /about/
 ---
 
-本名: 赤木文彦
+- 本名: 赤木文彦
 
-性別: 男性
+- 性別: 男性
 
-年齢: 24歳
+- 年齢: 24歳
 
-大学: 法政大学大学院　理工学研究科　応用情報工学専攻
+- 大学: 法政大学大学院　理工学研究科　応用情報工学専攻
 
 ### 研究テーマ
 
-バースト検出と良い実況者に基づくリアルタイム状況要約手法
+- バースト検出と良い実況者に基づくリアルタイム状況要約手法
 
-Real-Time Summerizing based on burst detection and authentic reporters
+- Real-Time Summerizing based on burst detection and authentic reporters
 
 ### 好きなアプリ
 
@@ -80,4 +80,4 @@ Real-Time Summerizing based on burst detection and authentic reporters
 
 ### 連絡先
 
-[syukatsu43@gmail.com](mailto:syukatsu43@gmail.com)
+- [syukatsu43@gmail.com](mailto:syukatsu43@gmail.com)
