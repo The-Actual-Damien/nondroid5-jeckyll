@@ -35,5 +35,9 @@ GoFデザインパターンは全部で23種類ある。
 
 「Factory Method」
 
-- メソッドの追加
+- メソッドの追加に対応
+
+「Simple Factory(Bulder)」
+
+- 動的ローディング
 
