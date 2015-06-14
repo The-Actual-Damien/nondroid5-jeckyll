@@ -54,6 +54,8 @@ CentOS
 
 Kalilinux
 
+Ubuntu
+
 ### キーボード
 
 Realforce
