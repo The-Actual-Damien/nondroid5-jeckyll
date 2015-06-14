@@ -18,6 +18,12 @@ permalink: /about/
 
 Real-Time Summerizing based on burst detection and authentic reporters
 
+好きなアプリ
+
+- クローラー
+
+- Twitter
+
 ### プログラミング歴
 
 Java 4年
