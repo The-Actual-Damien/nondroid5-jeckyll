@@ -31,9 +31,10 @@ GoFデザインパターンは全部で23種類ある。
 
 覚え方
 
-|       |     生成     |      構造      |          振る舞い         |
-|:-----:|:------------:|:--------------:|:-------------------------:|
-|クラス |FactoryMethod |Adapter (Class) |Interpreter<br/>TemplateMethod|
+|            |                       生成                        |      構造      |           振る舞い           |
+|:----------:|:-------------------------------------------------:|:--------------:|:----------------------------:|
+|   クラス   |                   FactoryMethod                   |Adapter (Class)           |Interpreter<br/>TemplateMethod|
+|オブジェクト|AbstractFactory<br/>Builder<br/>Prototype Singleton|Adapter(Object)<br/>Bridge<br/>Composite<br/>Decorator<br/>Decorator<br/>Flyweight<br/>Proxy|Chainof Responsibility <br/>Command<br/>Iterator<br/>Mediator</br>Memento<br/>Observer<br/>State<br/>Strategy</br>Visitor|
 
 「Command」
 
