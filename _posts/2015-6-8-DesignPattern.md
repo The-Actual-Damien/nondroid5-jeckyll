@@ -33,7 +33,7 @@ GoFデザインパターンは全部で23種類ある。
 
 |       |     生成     |      構造      |          振る舞い         |
 |:-----:|:------------:|:--------------:|:-------------------------:|
-|クラス |FactoryMethod |Adapter (Class) |Interpreter  TemplateMethod|
+|クラス |FactoryMethod |Adapter (Class) |Interpreter<br/>TemplateMethod|
 
 「Command」
 
