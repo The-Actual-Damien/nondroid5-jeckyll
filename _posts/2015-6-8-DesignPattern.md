@@ -52,3 +52,83 @@ GoFデザインパターンは全部で23種類ある。
 
 - 抽象基底クラス(クラス生成の抽象化に対応)
 
+```Java
+/* chap2.A/SortableData.java */
+/* 非デザインパターン */
+package chap2.A;
+
+/*ソート対象となるデータのクラス*/
+public class SortableData {
+	public String name; /* 表示名 */
+	public int value; /*ソートされるべき値*/
+	
+	public SortableData(String n, int v){
+		name = n; value = v;
+	}
+	
+	/*表示用のインターフェースだけ作っておく*/
+	public String toString() {
+		return name + " " + value;
+	}
+}
+```
+
+```Java
+/* chap2.A/Sorter.java */
+/* 非デザインパターン */
+package chap2.A;
+
+/* ソートを実行するクラス */
+public class Sorter {
+	private SortableData [] target;
+	private int num;
+	
+	public Sorter(SortableData [] in ){
+		target = in;
+		num = target.length;
+	}
+	
+	public SortableData [] sort(){
+		/*バブルソート*/
+		for(int i = 0; i < num -1; i++){
+			for(int j = i + 1; j < num; j ++){
+				if(target[i].value > target[j].value){
+					SortableData tmp = target[i];
+					target[i] = target[j];
+					target[j] = tmp;
+				}
+			}
+		}
+		return target;
+	}
+}
+```
+
+```Java
+/* chap2.A/SortTester.java */
+/* 非デザインパターン */
+package chap2.A;
+
+public class SortTester {
+	private SortableData [] data = {
+		new SortableData( "test0", 100 ),
+		new SortableData( "test1", 73 ),
+		new SortableData( "test2", 34 ),
+		new SortableData( "test3", 11 ),
+		new SortableData( "test4", 98 ),
+		new SortableData( "test5", 54 ),
+		new SortableData( "test6", 3 )
+	};
+	
+	public static void main(String[] args){
+		new SortTester();
+	}
+	public SortTester() {
+		Sorter sorter = new Sorter( data );
+		SortableData [] result = sorter.sort();
+		for(int i = 0; i < result.length; i++){
+			System.out.println( result[i] );
+		}
+	}
+}
+```
