@@ -52,6 +52,8 @@ GoFデザインパターンは全部で23種類ある。
 
 - 抽象基底クラス(クラス生成の抽象化に対応)
 
+### クラス名:SortableData
+
 ```Java
 /* chap2.A/SortableData.java */
 /* 非デザインパターン */
@@ -72,6 +74,8 @@ public class SortableData {
 	}
 }
 ```
+
+### クラス名:Sorter
 
 ```Java
 /* chap2.A/Sorter.java */
@@ -103,6 +107,8 @@ public class Sorter {
 	}
 }
 ```
+
+### クラス名:SortTester
 
 ```Java
 /* chap2.A/SortTester.java */
