@@ -799,4 +799,5 @@ public class QuickSortTester extends SortTester{
 }
 ```
 
-QuickSortTesterを実行すれば、簡単に機能を拡張できる.
+QuickSortTesterを実行すれば、簡単に機能を拡張できることが分かる.
+
