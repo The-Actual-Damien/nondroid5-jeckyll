@@ -1,6 +1,6 @@
 ---
 layout: post
-title: プログラミング言語を極めし者の呼び名
+title: プログラミング言語を極めし者の冠する称号
 ---
 
 # Javascript
