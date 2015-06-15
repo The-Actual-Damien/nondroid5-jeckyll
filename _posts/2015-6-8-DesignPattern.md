@@ -113,6 +113,7 @@ public class Sorter {
 ```Java
 /* chap2.A/SortTester.java */
 /* 非デザインパターン */
+/* 実行クラス */
 package chap2.A;
 
 public class SortTester {
