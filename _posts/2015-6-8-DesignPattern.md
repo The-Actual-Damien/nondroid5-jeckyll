@@ -801,3 +801,221 @@ public class QuickSortTester extends SortTester{
 
 QuickSortTesterを実行すれば、簡単に機能の拡張が可能であることが分かる.
 
+## 「Simple Factory(Builder)」パターンによるソースコードの改良の例
+
+### クラス名:SortableData
+
+```Java
+/* chap2/SortableData.java */
+/* デザインパターン */
+/* 昇順・降順を選択可能にする */
+/* Simple Factory(Builder)による改良 */
+/* 動的ローディング */
+package chap2;
+
+/*ソート可能なデータクラス用のインターフェース*/
+public interface SortableData {
+	public int getSortKey();
+}
+```
+
+### クラス名:Sorter
+
+```Java
+/* chap2/Sorter.java */
+/* デザインパターン */
+/* 昇順・降順を選択可能にする */
+/* Simple Factory(Builder)による改良 */
+/* 動的ローディングに対応した修正 */
+package chap2;
+
+public interface Sorter {
+	public SortableData [] sort();
+	public void setData(SortableData [] data);
+}
+```
+
+### クラス名:MyData
+
+```Java
+/* chap2/MyData.java */
+/* デザインパターン */
+/* 昇順・降順を選択可能にする */
+/* Simple Factory(Builder)による改良 */
+/* 動的ローディング */
+package chap2;
+
+/* ソート可能な具象データクラス */
+public class MyData implements SortableData {
+	private String name;   /* 表示名 */
+	private int value;   /* ソートされるべき値 */
+	
+	/* コンストラクタ */
+	public MyData(String n,int v) {
+		name = n; value = v;
+	}
+	
+	/* ゲッタ */
+	public String getName() { return name; }
+	public int getValue() { return value; }
+	
+	/* SortableData　インターフェースが要求する */
+	public int getSortKey() {return value;}
+	
+	/* 表示用のインターフェースだけ作っておく */
+	public String toString() {
+		return name + " " + value;
+	}
+}
+```
+
+### クラス名:DecreasingSorter
+
+```Java
+/* chap2.E/DecreasingSorter.java */
+/* デザインパターン */
+/* 昇順・降順を選択可能にする */
+/* Simple Factory(Builder)による改良 */
+/* 動的ローディング */
+package chap2;
+
+public class DecreasingSorter implements Sorter {
+	private SortableData [] target;
+	private int num;
+	
+	
+	/*　デフォルトコンストラクタ　動的ローディングのために必要*/
+	public DecreasingSorter(){/* 何もしない */}
+	
+	public DecreasingSorter( SortableData [] in ){
+		/* 公開メソッドに任す */
+		setData( in );
+	}
+	
+	/* 生成後データを渡す */
+	public void setData(SortableData [] in){
+		target = in;
+		num = target.length;
+	}
+	
+	public SortableData [] sort( ){
+		for(int i = 0; i < num - 1; i++){
+			for(int j = i +1; j < num; j++){
+				/*ここの判別のみがIncreasingSorterとの違い*/
+				if( target[i].getSortKey() < target[j].getSortKey() ){
+					SortableData tmp = target[i];
+					target[i] = target[j];
+					target[j] = tmp;
+				}
+			}
+		}
+		return target;
+	}
+}
+```
+
+
+
+### クラス名:IncreasingSorter
+
+```Java
+/* chap2/IncreasingSorter.java */
+/* デザインパターン */
+/* 昇順・降順を選択可能にする */
+/* Simple Factory(Builder)による改良 */
+/* 動的ローディング */
+package chap2;
+
+public class IncreasingSorter implements Sorter {
+	private SortableData [] target;
+	private int num;
+	
+	
+	/*　デフォルトコンストラクタ　動的ローディングのために必要*/
+	public IncreasingSorter(){/* 何もしない */}
+	
+	public IncreasingSorter( SortableData [] in ){
+		/* 公開メソッドに任す */
+		setData( in );
+	}
+	
+	/* 生成後データを渡す */
+	public void setData(SortableData [] in){
+		target = in;
+		num = target.length;
+	}
+	
+	public SortableData [] sort( ){
+		for(int i = 0; i < num - 1; i++){
+			for(int j = i +1; j < num; j++){
+				/*ここの判別のみがDecreasingSorterとの違い*/
+				if( target[i].getSortKey() > target[j].getSortKey() ){
+					SortableData tmp = target[i];
+					target[i] = target[j];
+					target[j] = tmp;
+				}
+			}
+		}
+		return target;
+	}
+}
+```
+
+### クラス名:SortTester
+
+```Java
+/* chap2/SortTester.java */
+/* デザインパターン */
+/* 昇順・降順を選択可能にする */
+/* Simple Factory(Builder)による改良 */
+/* 昇順用基底テスター */
+/* 動的ローディング */
+package chap2;
+
+public class SortTester {
+	private SortableData [] data = {
+		new MyData( "test0", 100 ),
+		new MyData( "test1", 73 ),
+		new MyData( "test2", 34 ),
+		new MyData( "test3", 11 ),
+		new MyData( "test4", 98 ),
+		new MyData( "test5", 54 ),
+		new MyData( "test6", 3 )
+	};
+	
+	public static void main(String[] args) throws Exception{
+		/* 引数がない場合にはデフォルトで昇順 */
+		String sorterName = "chap2.E.IncreasingSorter";//これを引数にして実行
+		if (args.length > 0){
+			sorterName = args[0];
+		}
+		/*実際に使うクラス名を渡す*/
+		new SortTester( sorterName );
+	}
+	public SortTester(String sorterName) throws Exception {
+		Sorter sorter = getSorter( sorterName ,data );
+		SortableData [] result = sorter.sort();/* 昇順・降順 変更*/
+		for(int i = 0; i < result.length; i++){
+			System.out.println( result[i] );
+		}
+	}
+	/* 昇順 */
+	public Sorter getSorter(String sorterName ,SortableData [] data)throws ClassNotFoundException, InstantiationException, IllegalAccessException{
+		/*これが動的ローディング
+		 *sorterNameは生成したいクラスの名前(String)
+		 *取得されるのは目的とする「クラス」自体を抽象化した「Class クラス」*/
+		Class<?> cls = Class.forName( sorterName );
+		/* Class クラスを使って、そのインスタンスを生成する */
+		Sorter sorter = (Sorter)cls.newInstance();
+		/* データを渡すため、新メソッドの追加が必要 */
+		sorter.setData( data );
+		return sorter;
+	}
+}
+```
+
+動的ローディングで引数でクラスを指定して実行することが可能である。
+
+引数になにも指定せずに、実行した場合には昇順に実行されるというように作成した。
+
+「Simple Factory(Builder)」パターンで実装している。
