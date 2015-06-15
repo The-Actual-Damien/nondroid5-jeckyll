@@ -58,9 +58,9 @@ GoFデザインパターンは全部で23種類ある。
 ### クラス名:SortableData
 
 ```Java
-/* chap2.A/SortableData.java */
+/* chap2/SortableData.java */
 /* 非デザインパターン */
-package chap2.A;
+package chap2;
 
 /*ソート対象となるデータのクラス*/
 public class SortableData {
@@ -81,9 +81,9 @@ public class SortableData {
 ### クラス名:Sorter
 
 ```Java
-/* chap2.A/Sorter.java */
+/* chap2/Sorter.java */
 /* 非デザインパターン */
-package chap2.A;
+package chap2;
 
 /* ソートを実行するクラス */
 public class Sorter {
@@ -114,10 +114,10 @@ public class Sorter {
 ### クラス名:SortTester
 
 ```Java
-/* chap2.A/SortTester.java */
+/* chap2/SortTester.java */
 /* 非デザインパターン */
 /* 実行クラス */
-package chap2.A;
+package chap2;
 
 public class SortTester {
 	private SortableData [] data = {
