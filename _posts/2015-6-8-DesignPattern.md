@@ -416,3 +416,387 @@ public class SortTester3 {
 	}
 }
 ```
+
+## デザインパターンを採用していないソースコードの例
+
+### クラス名:SortableData
+
+```Java
+/* chap2/SortableData.java */
+/* 昇順・降順を選択可能にする */
+/* 非デザインパターン */
+package chap2;
+
+/*ソート可能なデータクラス用のインターフェース*/
+public interface SortableData {
+	public int getSortKey();
+}
+```
+
+### クラス名:Sorter
+
+```Java
+/* chap2/Sorter.java */
+/* 昇順・降順を選択可能にする */
+/* 非デザインパターン */
+package chap2;
+
+public class Sorter {
+	static final int INCREASING = 0; /*昇順*/
+	static final int DECREASING = 1; /*降順*/
+	private SortableData [] target;
+	private int num;
+	
+	public Sorter(SortableData [] in ){
+		target = in;
+		num = target.length;
+	}
+	
+	public SortableData [] sort ( int order ){
+		for(int i = 0; i < num - 1 ; i++){
+			for(int j = i + 1; j < num; j++){
+				if ( order == INCREASING ){/* 昇順 */
+					if(target[i].getSortKey() > target[j].getSortKey()) {
+						swap (i, j);
+					}
+				} else if( order == DECREASING ){/* 降順 */
+					if(target[i].getSortKey() < target[j].getSortKey()){
+						swap(i, j);
+					}
+				}
+			}
+		}
+		return target;
+	}
+	
+	/* 処理が共通するので下請け関数化 */
+	private void swap( int i, int j){
+		SortableData tmp = target[i];
+		target[i] = target[j];
+		target[j] = tmp;
+	}
+}
+```
+
+### クラス名:MyData
+
+```Java
+/* chap2/MyData.java */
+/* 昇順・降順を選択可能にする */
+/* 非デザインパターン */
+package chap2;
+
+/* ソート可能な具象データクラス */
+public class MyData implements SortableData {
+	private String name;   /* 表示名 */
+	private int value;   /* ソートされるべき値 */
+	
+	/* コンストラクタ */
+	public MyData(String n,int v) {
+		name = n; value = v;
+	}
+	
+	/* ゲッタ */
+	public String getName() { return name; }
+	public int getValue() { return value; }
+	
+	/* SortableData　インターフェースが要求する */
+	public int getSortKey() {return value;}
+	
+	/* 表示用のインターフェースだけ作っておく */
+	public String toString() {
+		return name + " " + value;
+	}
+}
+```
+
+### クラス名:SortTester
+
+```Java
+/* chap2/SortTester.java */
+/* 昇順・降順を選択可能にする */
+/* 非デザインパターン */
+package chap2;
+
+public class SortTester {
+	private SortableData [] data = {
+		new MyData( "test0", 100 ),
+		new MyData( "test1", 73 ),
+		new MyData( "test2", 34 ),
+		new MyData( "test3", 11 ),
+		new MyData( "test4", 98 ),
+		new MyData( "test5", 54 ),
+		new MyData( "test6", 3 )
+	};
+	
+	public static void main(String[] args){
+		new SortTester();
+	}
+	public SortTester() {
+		Sorter sorter = new Sorter( data );
+		SortableData [] result = sorter.sort( Sorter.DECREASING );/* 昇順・降順 変更*/
+		for(int i = 0; i < result.length; i++){
+			System.out.println( result[i] );
+		}
+	}
+}
+```
+
+## 「Factory Method」パターンによるソースコードの改良の例
+
+### クラス名:SortableData
+
+```Java
+/* chap2/SortableData.java */
+/* デザインパターン */
+/* 昇順・降順を選択可能にする */
+/* Factory Methodによる改良 */
+package chap2;
+
+/*ソート可能なデータクラス用のインターフェース*/
+public interface SortableData {
+	public int getSortKey();
+}
+```
+
+### クラス名:Sorter
+
+```Java
+/* chap2/Sorter.java */
+/* デザインパターン */
+/* 昇順・降順を選択可能にする */
+/* Factory Methodによる改良 */
+package chap2;
+
+public interface Sorter {
+	public SortableData [] sort();
+}
+```
+
+### クラス名:MyData
+
+```Java
+/* chap2/MyData.java */
+/* 昇順・降順を選択可能にする */
+/* デザインパターン */
+/* Factory Methodによる改良 */
+package chap2;
+
+/* ソート可能な具象データクラス */
+public class MyData implements SortableData {
+	private String name;   /* 表示名 */
+	private int value;   /* ソートされるべき値 */
+	
+	/* コンストラクタ */
+	public MyData(String n,int v) {
+		name = n; value = v;
+	}
+	
+	/* ゲッタ */
+	public String getName() { return name; }
+	public int getValue() { return value; }
+	
+	/* SortableData　インターフェースが要求する */
+	public int getSortKey() {return value;}
+	
+	/* 表示用のインターフェースだけ作っておく */
+	public String toString() {
+		return name + " " + value;
+	}
+}
+```
+
+### クラス名:DecreasingSorter
+
+```Java
+/* chap2/DecreasingSorter.java */
+/* デザインパターン */
+/* 昇順・降順を選択可能にする */
+/* Factory Methodによる改良 */
+package chap2;
+
+public class DecreasingSorter implements Sorter {
+	private SortableData [] target;
+	private int num;
+	
+	public DecreasingSorter( SortableData [] in ){
+		target = in;
+		num = target.length;
+		
+	}
+	
+	public SortableData [] sort( ){
+		for(int i = 0; i < num - 1; i++){
+			for(int j = i +1; j < num; j++){
+				/*ここの判別のみがIncreasingSorterとの違い*/
+				if( target[i].getSortKey() < target[j].getSortKey() ){
+					SortableData tmp = target[i];
+					target[i] = target[j];
+					target[j] = tmp;
+				}
+			}
+		}
+		return target;
+	}
+}
+```
+
+### クラス名:IncreasingSorter
+
+```Java
+/* chap2/IncreasingSorter.java */
+/* デザインパターン */
+/* 昇順・降順を選択可能にする */
+/* Factory Methodによる改良 */
+package chap2;
+
+public class IncreasingSorter implements Sorter {
+	private SortableData [] target;
+	private int num;
+	
+	public IncreasingSorter( SortableData [] in ){
+		target = in;
+		num = target.length;
+		
+	}
+	
+	public SortableData [] sort( ){
+		for(int i = 0; i < num - 1; i++){
+			for(int j = i +1; j < num; j++){
+				/*ここの判別のみがDecreasingSorterとの違い*/
+				if( target[i].getSortKey() > target[j].getSortKey() ){
+					SortableData tmp = target[i];
+					target[i] = target[j];
+					target[j] = tmp;
+				}
+			}
+		}
+		return target;
+	}
+}
+```
+
+### クラス名:SortTester
+
+```Java
+/* chap2/SortTester.java */
+/* デザインパターン */
+/* 昇順・降順を選択可能にする */
+/* Factory Methodによる改良 */
+/* 昇順用基底実行テスター */
+package chap2;
+
+public class SortTester {
+	private SortableData [] data = {
+		new MyData( "test0", 100 ),
+		new MyData( "test1", 73 ),
+		new MyData( "test2", 34 ),
+		new MyData( "test3", 11 ),
+		new MyData( "test4", 98 ),
+		new MyData( "test5", 54 ),
+		new MyData( "test6", 3 )
+	};
+	
+	public static void main(String[] args){
+		new SortTester();
+	}
+	public SortTester() {
+		Sorter sorter = getSorter( data );
+		SortableData [] result = sorter.sort();/* 昇順・降順 変更*/
+		for(int i = 0; i < result.length; i++){
+			System.out.println( result[i] );
+		}
+	}
+	/* 昇順 */
+	public Sorter getSorter( SortableData [] data){
+		return new IncreasingSorter( data );
+	}
+}
+```
+
+### クラス名:SortTester2
+
+```Java
+/* chap2/SortTester2.java */
+/* デザインパターン */
+/* 昇順・降順を選択可能にする */
+/* Factory Methodによる改良 */
+/* 降順用拡張実行テスター */
+package chap2;
+
+public class SortTester2 extends SortTester{
+	
+	public static void main(String[] args){
+		new SortTester2();
+	}
+	/* 降順 */
+	public Sorter getSorter( SortableData [] data){
+		return new DecreasingSorter( data );
+	}
+}
+```
+
+上記のように「Factory Method」パターンを採用すれば、新たにメソッドを追加したい時に
+
+今回の場合でいうと例えば、後からクイックソートのメソッドを追加したくなった時
+
+以下のようにクラスを追加して
+
+### クラス名:QuickSorter
+
+```Java
+/* chap2/IncreasingSorter.java */
+/* デザインパターン */
+/* 昇順・降順を選択可能にする */
+/* Factory Methodによる改良 */
+package chap2;
+
+public class QuickSorter implements Sorter {
+	private SortableData [] target;
+	private int num;
+	
+	public QuickSorter( SortableData [] in ){
+		target = in;
+		num = target.length;
+		
+	}
+	/*QuickSort(機能がバブルソートなので要改変)*/	
+	public SortableData [] sort( ){
+		for(int i = 0; i < num - 1; i++){
+			for(int j = i +1; j < num; j++){
+				/*ここの判別のみがDecreasingSorterとの違い*/
+				if( target[i].getSortKey() > target[j].getSortKey() ){
+					SortableData tmp = target[i];
+					target[i] = target[j];
+					target[j] = tmp;
+				}
+			}
+		}
+		return target;
+	}
+}
+```
+
+### クラス名:QuickSortTester
+
+```Java
+/* chap2/QuickSortTester.java */
+/* デザインパターン */
+/* 昇順・降順を選択可能にする */
+/* Factory Methodによる改良 */
+/* QuickSorter用テスター */
+package chap2;
+
+public class QuickSortTester extends SortTester{
+	
+	public static void main(String[] args){
+		new QuickSortTester();
+	}
+	/* QuickSortを呼び出せばよい */
+	public Sorter getSorter( SortableData [] data){
+		return new QuickSorter( data );
+	}
+}
+```
+
+QuickSortTesterを実行すれば、簡単に機能を拡張できる.
