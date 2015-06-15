@@ -51,3 +51,6 @@ title: プログラミング言語を極めし者の呼び名
 # Haskell
 
 - Haskeller（ハスケラー）
+
+参考にしたサイト
+[着ぐるみ追い剥ぎペンギン](http://www.kigurumi.asia/)
