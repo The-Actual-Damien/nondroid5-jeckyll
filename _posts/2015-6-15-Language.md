@@ -3,52 +3,52 @@ layout: post
 title: プログラミング言語を極めし者の冠する称号
 ---
 
-# Javascript
+### Javascript
 
 - JavaScripter（ジャバスクリプター）
 - JSer（ジェイサー）
 
-# Flash
+### Flash
 
 - Flasher（フラッシャー）
 
-# PHP
+### PHP
 
 - PHPer（ペチパー）
 
-# Perl
+### Perl
 
 - Perler（パーラー）
 - Perl Monger（パール・モンガー）
 
-# Python
+### Python
 
 - Pythonista（パイソニスタ）
 - Pythonian（パイソニアン）
 - Pythonist（パイソニスト）
 - Pythoner（パイソナー）
 
-# Ruby
+### Ruby
 
 - Rubyist（ルビイスト）
 
-# Java
+### Java
 
 - JAVAer（ジャバー）
 
-# Scala
+### Scala
 
 - Scalalian（スカラリアン）
 
-# LISP
+### LISP
 
 - LISPer（リスパー）
 
-# COBOL
+### COBOL
 
 - COBOLer（コボラー）
 
-# Haskell
+### Haskell
 
 - Haskeller（ハスケラー）
 
