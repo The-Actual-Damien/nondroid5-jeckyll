@@ -52,6 +52,9 @@ title: プログラミング言語を極めし者の冠する称号
 
 - Haskeller（ハスケラー）
 
+JAVAerになりたい。Lisperには憧れるけれども...
+
+
 参考にしたサイト
 
 [着ぐるみ追い剥ぎペンギン](http://www.kigurumi.asia/)
