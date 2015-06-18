@@ -52,7 +52,7 @@ title: プログラミング言語を極めし者の冠する称号
 
 - Haskeller（ハスケラー）
 
-JAVAerになりたい。Lisperには憧れるけれども...
+JAVAerとPythonistaになりたい。Lisperには憧れるけれども...
 
 
 参考にしたサイト
