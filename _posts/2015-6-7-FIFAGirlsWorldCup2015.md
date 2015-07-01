@@ -144,5 +144,6 @@ title: カナダ開催 FIFA 女子ワールドカップ 2015
 | 37 | 6月21日(日)| AM8:30 |     中国 vs カメルーン     |#CHA |#CMR |#worldcup|#wc2015|
 | 41 | 6月22日(月)| AM2:00 | ブラジル vs オーストラリア |#BRA |#AUS |#worldcup|#wc2015|
 | 40 | 6月22日(月)| AM5:00 |      フランス vs 韓国      |#FRA |#KOR |#worldcup|#wc2015|
+| 44 | 6月22日(月)| AM8:30 |      カナダ vs スイス      |#CAN |#SUI |#worldcup|#wc2015|
 
 
