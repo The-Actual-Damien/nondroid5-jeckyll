@@ -1,5 +1,5 @@
-# Jekyll Now
- v 1.1.0
+# ドロイド機械帝国
+Jekyll Now v 1.1.0
 
 # Author
 Fumihiko Akagi
