@@ -25,7 +25,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 770px;
+  max-width: 780px;
   padding: 0 10px;
   width: 100%;
 }
@@ -228,7 +228,7 @@ nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
-  font-size: 18px;
+  font-size: 15px;
 
   @include mobile {
     float: none;
