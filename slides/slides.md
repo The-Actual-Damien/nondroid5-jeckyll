@@ -1,7 +1,5 @@
 ---
 layout: page
-title: Slides
+title: スライド一覧
 permalink: /slide/
 ---
-
-#Slide List
