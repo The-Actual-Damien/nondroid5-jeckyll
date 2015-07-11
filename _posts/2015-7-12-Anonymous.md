@@ -1,6 +1,6 @@
 ---
 layout: post
-title: アノニマス
+title: アノニマス~ Anonymous ~
 ---
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/DtuSby22Ep8" frameborder="0" allowfullscreen></iframe>
